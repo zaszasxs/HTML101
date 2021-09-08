@@ -1,0 +1,61 @@
+body {
+    background-color: gray;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    /* animation-name: anime1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in; */
+    position: relative;
+    animation-name: anime2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation: anima2 3s infinite; */
+}
+
+@keyframes anime2 {
+    0% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+        background-color: hotpink;
+    }
+    25% {
+        top: 0;
+        left: 300px;
+        transform: rotate(90deg);
+        background-color: rgb(233, 255, 105);
+    }
+    50% {
+        top: 300px;
+        left: 300px;
+        transform: rotate(180deg);
+        background-color: rgb(105, 255, 198);
+    }
+    75% {
+        top: 300px;
+        left: 0;
+        transform: rotate(270deg);
+        background-color: rgb(118, 255, 105);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(360deg);
+    }
+}
+
+
+/* @keyframes anime1 {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 400px;
+    }
+} */

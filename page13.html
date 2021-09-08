@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body {
+            height: 4000px;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .cir {
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 45px 45px 45px 45px;
+            box-shadow: 10px 5px 10px 7px rgb(43, 214, 226), -10px -5px 10px 7px blueviolet;
+        }
+        
+        #c1 {
+            background-color: rgb(255, 0, 242);
+            position: relative;
+            left: 50px;
+            top: 50px;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+        
+        #c2 {
+            background-color: rgb(208, 255, 0);
+            position: absolute;
+            top: 150px;
+            left: 50px;
+            opacity: 0.25;
+        }
+        
+        #c2:hover {
+            opacity: 1;
+        }
+        
+        #c3 {
+            background-color: rgb(0, 255, 106);
+            position: absolute;
+            right: 50px;
+            bottom: 10px;
+            opacity: 0.7;
+        }
+        
+        #c4 {
+            background-color: rgb(98, 0, 255);
+            position: fixed;
+            left: 70px;
+            transform: scale(0.99, 1.5);
+            /* skew rotate translate etc */
+        }
+        
+        #c5 {
+            background-color: rgb(255, 0, 13);
+            position: sticky;
+            top: 0;
+        }
+        
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#c5">click</a>
+
+    <div class="cir" id="c1"></div>
+
+    <div class="container">
+        <div class="cir" id="c2"></div>
+        <div class="cir" id="c3"></div>
+    </div>
+
+    <div class="cir" id="c4"></div>
+    <div class="cir" id="c5"></div>
+
+    <!-- box shadow -->
+
+
+
+</body>
+
+</html>

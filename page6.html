@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1 align = "center">form101</h1>
+    <form align = "center">
+        <div>
+            <label for="ชื่อ">ชื่อ : </label>
+            <input type="text" name="fname" placeholder="(ชื่อจริง)">
+        </div>
+        <div>
+            <label for="นามสกุล">นามสกุล : </label>
+            <input type="text" name="lname">
+        </div>
+        <div>
+            <label for="email">email : </label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">password : </label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <label for="ที่อยู่">ที่อยู่ : </label>
+            <textarea name="ที่อยู่" id="" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="อายุ">อายุ : </label>
+            <input type="number" name="age" min="0" max="99" value="5">
+            <input type="range" name="agerange">
+            
+        </div>
+        <div>
+            <label for="วันเกิด">วันเกิด : </label>
+            <input type="date" name="birthday">
+        </div>
+        <div>
+            <label for="เบอร์">เบอร์ : </label>
+            <input type="tel" name="tel">
+        </div>
+        <div>
+            <label for="สี">สี : </label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="ชอบ">ชอบ : </label>
+            <select name="like" id="">
+                <option value="เจส" selected>เจส</option>
+                <option value="เจม">เจม</option>
+            </select>
+        </div>
+        <div>
+            <label for="เพศ">เพศ : </label>
+            <input type="radio" name="gender" >ชาย
+            <input type="radio" name="gender" >หญิง
+            <input type="radio" name="gender" >อื่นๆ
+        </div>
+        <div>
+            <label for="ภาษา">ภาษา : </label>
+            <input type="checkbox" name="lang">html
+            <input type="checkbox" name="lang">css
+            <input type="checkbox" name="lang">js
+        </div>
+        <div>
+            <label for="ภาพ">ภาพ : </label>
+            <input type="file"><br>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="submit">
+            <button type="reset">reset</button>
+        </div>
+        
+    </form>
+</body>
+</html>

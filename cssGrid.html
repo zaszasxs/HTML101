@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-column-start: 3;
+            grid-row-start: 3; */
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        
+        .obj {
+            padding: 1rem;
+            border: 1px solid greenyellow;
+            background-color: hotpink;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        
+        .obj:first-child {
+            background-color: indianred;
+            /* grid-row-start: 1;   นับเป็นเส้น ไม่ใช่บล้อค 
+            grid-row-end: 3; */
+            grid-row: 1/3;
+        }
+        
+        .grid2 {
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            grid-template-rows: 3fr 5fr 2fr;
+            grid-template-areas: 'head head' 'side bod' 'foot bod';
+        }
+        
+        .head {
+            grid-area: head;
+            background-color: rgb(92, 205, 98);
+        }
+        
+        .bod {
+            grid-area: bod;
+            background-color: indianred;
+        }
+        
+        .foot {
+            grid-area: foot;
+            background-color: rgb(163, 255, 15);
+        }
+        
+        .side {
+            grid-area: side;
+            background-color: rgb(24, 29, 15);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="obj">A</div>
+        <div class="obj">B</div>
+        <div class="obj">C</div>
+        <div class="obj">D</div>
+        <div class="obj">E</div>
+        <div class="obj">G</div>
+        <div class="obj">H</div>
+
+    </div>
+
+    <h2>grid template area</h2>
+    <div class="grid2">
+        <div class="head">A</div>
+        <div class="bod">B</div>
+        <div class="foot">C</div>
+        <div class="side">D</div>
+
+</body>
+
+</html>

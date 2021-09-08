@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: 2px soild green;
+}
+
+.flex {
+    display: flex;
+    background-color: cornflowerblue;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30vh;
+}
+
+.flex2 {
+    display: flex;
+    background-color: cornflowerblue;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    height: 60vh;
+}
+
+.flex3 {
+    display: flex;
+    background-color: cornflowerblue;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30vh;
+}
+
+.obj {
+    width: 100px;
+    /* flex: 1; */
+    /* ทำให้ obj เต็ม container */
+    margin: 10px;
+    padding: 10px;
+    background: orange;
+    text-align: center;
+    border: var(--green);
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px firebrick;
+    /* transition:  */
+    /* transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay = 2s; */
+    transition: all 2s ease-in 0.5s;
+}
+
+.obj:hover {
+    background-color: orangered;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.o1 {
+    /* flex-basis: 10px; */
+    /* กำหนดเบื้องต้น */
+}
+
+.o2 {
+    flex-shrink: 1;
+    align-self: flex-end;
+    /* หดตีว default = 1 */
+}
+
+.o3 {
+    /* flex-grow: 1; */
+    /* ขยาย */
+}
+
+.o4 {
+    align-self: flex-end;
+}

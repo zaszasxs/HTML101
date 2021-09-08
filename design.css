@@ -1,0 +1,59 @@
+body{
+    background: gray;
+    color: honeydew;
+    text-align: center;
+    padding: 10px;
+}
+
+h1{
+    display: none;
+}
+/* phone */
+@media only screen and (max-width:480px) {
+    body{
+        background-color: indianred;
+    }
+    #phone h1{
+        display: block;
+    }
+}
+
+/* tablet */
+@media (min-width:481px) and (max-width:1024px){
+    body{ 
+        background-color: indigo;
+    }
+    #tablet h1{
+        display: block;
+    }
+}
+
+/* Laptop */
+@media (min-width:1025px) and (max-width:1200px){
+    body{ 
+        background-color: rgb(130, 117, 0);
+    }
+    #normal h1{
+        display: block;
+    }
+}
+
+/* TV */
+@media (min-width:1201px) {
+    body{ 
+        background-color: rgb(0, 130, 0);
+    }
+    #TV h1{
+        display: block;
+    }
+}
+
+/* landsacpe */
+@media (max-height:500px) {
+    body{
+        background-color: black;
+    }
+    #landsape h1{
+        display: block;
+    }
+}
